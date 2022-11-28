@@ -1,0 +1,194 @@
+<!-- balise doctype qui permet de définir le type de document -->
+<!DOCTYPE html>
+
+<!-- ici l'attribut lang permet de définir la langue du document -->
+<html lang="fr">
+
+    <!-- la balise head qui est le conteneur de l'entête de ma page web -->
+    <head>
+
+        <!-- cette balise meta permet de définir l'encodage de la page web, utf-8 étant une bonne référence -->
+        <meta charset="UTF-8">
+
+        <!-- cette balise permet d'améliorer la compatibilité de la page web avec Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- cette balise permet de définir le comportement responsive de la page web -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- la balise title qui permet de définir le titre de la page web -->
+        <title>Mon profil - Pierre Delaunay</title>
+
+        <!-- la balise link permet de lier une feuille de style css, solution conseillé -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- exemple de css dans un fichier html, solution pas conseillé -->
+        <style>
+            h3{
+                color: #83a73b;
+                font-size: 30px;
+                /* underline pour souligner */
+                text-decoration: underline;
+            }
+        </style>
+        
+    </head>
+
+    <!-- la balise body le conteneur de notre page web, visible -->
+    <body id="homePage">
+
+
+      
+
+        <!-- ici un attribut class a été défini pour pouvoir le cibler avec du css -->
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/1768831?v=4" alt="">
+
+
+
+        <!-- essai d'integration d'un effet de text  -->
+        <div class="container">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">IFR WEB</text>
+                </symbol>
+
+                <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+        </div>
+
+
+        <!-- mon menu burger -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Accueil</a></li>
+                <li><a class="menu__item" href="about.html">A propos</a></li>                
+                <li><a class="menu__item" href="#">Réalisations</a></li>
+                <li><a class="menu__item" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="leftZoneTitle">
+            <!-- les titre de niveau 1 à 6 -->
+            <h1 id="haut">Ceci est un titre sur la gauche</h1>
+        </div>
+
+        <div class="rightZoneTitle">
+            <h2>Ceci est un titre un peu plus petit sur la droite</h2>
+        </div>
+
+        <h3>Ceci est un titre un peu plus petit centré </h3>
+        <!-- exemple de css dans le html, pas conseillé -->
+        <h4 style="color:blue;">Ceci est un titre un peu plus petit</h4>
+        <h5>Ceci est un titre un peu plus petit</h5>
+        <h6>Ceci est un titre un peu plus petit</h6>
+      
+
+
+        <!-- la balise a permet de créer un lien vers une autre page web -->
+        <a href="https://www.animeka.com/" title="va voir c'est super ce site !">liens vers mon site d'anime</a>
+
+        <!-- exemple de liste non ordonnée -->
+        <ul>
+            <li>premier élément</li>
+            <li>deuxième élément</li>
+            <li>troisième élément</li>
+        </ul>
+
+        <a href="https://www.youtube.com/?hl=FR">
+
+            <!-- la balise p qui permet de créer un paragraphe -->
+            <p>Ceci est un paragraphe avec un element <i>italic</i> et du <b>gras</b>  </p>
+
+        </a>
+
+        <!-- balise image avec une image qui vient d'internet -->
+        <img src="https://edusign.app/professor/assets/imgs/logo.png" alt="logo de edusign">
+        
+        <!-- balise image avec une image qui vient du PC -->    
+        <img title="coucou c'est l'attribut title" width="100%"  src="img/nature1.jpg" alt="le couche de soleil avec la mer">
+
+
+
+        <video width="320" height="240" controls>
+            <source src="img/video.mp4" type="video/mp4">
+            <!-- <source src="img/video.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- saut de ligne -->
+        <br />
+        <br />
+        <br />
+
+        <!-- video depuis youtube , clic sur partager puis intégrer, puis copier coller le code  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GFmE5_8xypY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <br>
+        <br>
+        <br>
+
+
+        <!-- un lien sur une image, on peut imbriquer les balises -->
+        <a href="https://fr-fr.facebook.com/groups/111563082245692/">
+
+            <img width="80px" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+
+        </a>
+
+
+
+        <!-- les balises vides div et span  -->
+
+        <div class="bandeauDeuxZone">
+               
+            <div class="zone1">
+                <p>Gauche</p>
+            </div>
+
+            <div class="zone2">
+                <p>Droite</p>
+            </div>
+
+        </div>
+
+        <!-- 
+            la balise button pour créer un bouton 
+            https://developer.mozilla.org/fr/docs/Web/HTML/Element/Button
+        -->
+
+        <br>
+
+
+        <!-- lien de type ancre pour remonter en haut de la page 
+            https://www.alsacreations.com/astuce/lire/5-lien-precis-page-ancre-anchor-diese.html
+        -->
+        <a href="#haut">
+            <button type="button">
+                Aller en haut
+            </button>
+        </a>
+
+
+        <!-- exemple de balises vides : https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/1606168-decouvrez-le-modele-des-boites -->
+        <div>ceci est une balise vide div (de type block) qui permet de structurer la page et appliquer du css sur des blocs si besoin</div>
+        <span>ceci est une balise vide span (de type inline) qui permet de structurer des éléments dans des paragraphes et appliquer du css si besoin</span>
+     
+
+    </body>
+
+
+
+</html>
