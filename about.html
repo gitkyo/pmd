@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos de moi</title>
+    <!-- la balise link permet de lier une feuille de style css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- google font : http://www.google.com/fonts/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+</head>
+<body id="aboutPage">
+    
+    <h1>
+        ma page about
+    </h1>
+
+    <!-- slider  -->
+    <!-- <div id="slider" class="wrapper">
+        <input type="radio" name="image-slide" checked="checked">
+        <picture aria-label="Random Picture 1">
+            <img src="https://picsum.photos/500/300?random=1" alt="Random Picture 1">
+        </picture>
+        
+        <input type="radio" name="image-slide">
+        <picture aria-label="Random Picture 2">
+            <img src="https://picsum.photos/500/300?random=2" alt="">
+        </picture>
+    
+        <input type="radio" name="image-slide">
+        <picture aria-label="Link image">
+            <a href="https://picsum.photos/500/300?random=3" target="_blank">
+                <img src="https://picsum.photos/500/300?random=3" alt="">
+            </a>
+        </picture>
+        
+        <input type="radio" name="image-slide">
+        <picture>
+            <img src="https://picsum.photos/500/300?random=4" alt="">
+        </picture>
+        
+        <input type="radio" name="image-slide">
+        <section>
+            <h2>
+                This is not an image!
+            </h2>
+            <p>You could also just use a container with some text in it</p>
+            <button>Call to action, bitch!</button>
+        </section>
+    </div> -->
+    
+
+
+    <p>Positionnement avec les display</p>
+    <div class="conteneurZoneAbout">
+
+        <div class="zone3">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et 
+            ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.  <span class="txtSpecial"> gauche </span> 
+            </p>
+        </div>
+
+        <div class="zone3">
+            <p>
+                zone  <span class="txtSpecial"> milieu </span> 
+            </p>
+        </div>
+
+        <div class="zone3">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus 
+                et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.  <span class="txtSpecial"> droite </span> 
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>Positionnement avec flexbox</p>
+    <div class="conteneurZoneAboutFlex">
+
+        <div class="zone3">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.  <span class="txtSpecial"> gauche </span> 
+            </p>
+        </div>
+
+        <div class="zone3">
+            <p>
+                zone  <span class="txtSpecial"> milieu </span> 
+            </p>
+        </div>
+
+        <div class="zone3">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus 
+                et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.  <span class="txtSpecial"> droite </span> 
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- mon menu burger -->
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Accueil</a></li>
+            <li><a class="menu__item" href="about.html">A propos</a></li>                
+            <li><a class="menu__item" href="#">Réalisations</a></li>
+            <li><a class="menu__item" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- exemple d'integration d'un text avec ombre porte généré : https://html-css-js.com/css/generator/text-shadow/ -->
+    <div id="demotext">Ombre porte généré</div>
+
+
+    <br>
+
+    <a href="PMD-3.zip"
+    download="PMD-3.zip">Télécharger le code source : PMD-3.zip</a>
+
+    <br>
+    <br>
+    <br>
+
+    <a href="Synthese-htmlcss.pdf"
+    download="Synthese-htmlcss.pdf">Voir la synthèse sur le html & css : Synthese-htmlcss.pdf</a>
+
+    <br>
+    <br>
+    <br>
+
+    <embed src=Synthese-htmlcss.pdf width=800 height=500 type='application/pdf'/>
+
+
+</body>
+</html>
